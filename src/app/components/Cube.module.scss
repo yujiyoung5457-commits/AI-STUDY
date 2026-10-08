@@ -1,0 +1,10 @@
+.cube {
+  width: min(100%, 300px);
+  margin: 0 auto 1.5rem;
+
+  canvas {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+  }
+}

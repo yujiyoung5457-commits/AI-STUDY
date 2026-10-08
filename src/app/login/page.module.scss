@@ -1,0 +1,73 @@
+.main {
+  min-height: calc(100vh - 7rem);
+  padding: clamp(2rem, 6vw, 5rem) 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.loginCard {
+  width: min(100%, 420px);
+  padding: 2rem;
+  border: 1px solid #d9dbea;
+  border-radius: 16px;
+  color: #171717;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(23 23 23 / 8%);
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.form {
+  display: grid;
+  gap: 0.85rem;
+
+  input,
+  button,
+  a {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #b9bdd3;
+    border-radius: 8px;
+  }
+
+  input {
+    background: #fff;
+    color: #171717;
+  }
+
+  button,
+  a {
+    color: #fff;
+    background-color: rgb(102, 102, 211);
+    text-align: center;
+  }
+
+  p {
+    color: #c62828;
+  }
+}
+
+.socialButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .loginCard {
+    padding: 1.5rem;
+  }
+
+  .socialButtons {
+    grid-template-columns: 1fr;
+  }
+}

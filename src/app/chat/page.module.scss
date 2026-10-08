@@ -1,0 +1,61 @@
+.main {
+  width: min(100%, 900px);
+  min-height: calc(100vh - 7rem);
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 3rem);
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.chatCard {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid #d9dbea;
+  border-radius: 16px;
+  color: #171717;
+  background: #fff;
+}
+
+.userInfo,
+.message {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  background: #f0f1fa;
+}
+
+.message p {
+  margin-top: 0.35rem;
+  overflow-wrap: anywhere;
+}
+
+.messageForm {
+  display: flex;
+  gap: 0.75rem;
+
+  input {
+    min-width: 0;
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #b9bdd3;
+    border-radius: 8px;
+  }
+
+  button {
+    flex: 0 0 auto;
+    padding: 0.75rem 1.5rem;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    background-color: rgb(102, 102, 211);
+  }
+}
+
+@media (max-width: 520px) {
+  .messageForm {
+    flex-direction: column;
+  }
+}
